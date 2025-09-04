@@ -10,12 +10,12 @@
   // sort the filtered array
   // return the filtered array
 
-  function mergeArrays(a, b) {
-    let merged = a.concat(b)
-    
-    let filtered = merged.filter((item, index) => merged.indexOf(item) === index)
-    
-    let sorted = filtered.sort((low, high) => low - high)
-    
-    return sorted
-  }
+function mergeArrays(a, b) {
+  let merged = a.concat(b)
+  
+  let filtered = merged.filter((item, index) => merged.indexOf(item) === index)
+  
+  let sorted = filtered.sort((low, high) => low - high)
+  
+  return sorted
+}
