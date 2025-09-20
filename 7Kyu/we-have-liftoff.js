@@ -18,9 +18,8 @@ Psuedo:
 4. Return altered string
 */
 
-function liftoff(instructions){
+function liftoff(instructions) {
     let sorted = instructions.sort((a, b) => b - a) 
     let joined = sorted.join(' ')
     return `${joined} liftoff!`
-    
   }
