@@ -17,13 +17,22 @@ grab substring to be replaces
 reverse whole string
 replace substring with reversed string and join
 return string
-
 */
+
 function solve(st, a, b){
+    // Extract the substring from index 'a' to index 'b' (inclusive)
+    // b+1 is used because substring() is exclusive of the end index
     let sub = st.substring(a, b+1)
+    
+    // Reverse the extracted substring by:
+    // 1. split('') - converting string to array of characters
+    // 2. reverse() - reversing the order of the array elements
+    // 3. join('') - converting the array back to a string
     let subReverse = sub.split('').reverse().join('')
     
+    // Replace the original substring in the string with the reversed version
     st = st.replace(sub, subReverse)
      
+    // Return the modified string with the reversed portion
     return st
    }
