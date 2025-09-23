@@ -25,9 +25,6 @@ function solve(st, a, b){
     let sub = st.substring(a, b+1)
     
     // Reverse the extracted substring by:
-    // 1. split('') - converting string to array of characters
-    // 2. reverse() - reversing the order of the array elements
-    // 3. join('') - converting the array back to a string
     let subReverse = sub.split('').reverse().join('')
     
     // Replace the original substring in the string with the reversed version
