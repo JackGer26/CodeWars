@@ -19,7 +19,7 @@ Psuedo:
 4. Join all characters into final string
 */
 
-function binary_to_string(binary) {
+function binaryToString(binary) {
   return binary
     .split('0b')
     .filter(segment => segment !== '')
