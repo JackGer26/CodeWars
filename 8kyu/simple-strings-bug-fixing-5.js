@@ -13,7 +13,6 @@ Psuedo:
 1. Change # to $
 2. Add } at end of function
 3. Add Space after ,
-}
 */
 
 function buildString(...template){
