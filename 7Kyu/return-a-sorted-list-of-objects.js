@@ -8,6 +8,5 @@ Pseudocode: list = Array.from(arr); return list.sort((a,b)=>b[sortBy]-a[sortBy])
 */
 
 function sortList (sortBy, list) {
-    const list = Array.from(arr);
     return list.sort((a, b) => b[sortBy] - a[sortBy]);
   }
