@@ -1,5 +1,3 @@
-// Create a function that checks if the first argument n is divisible by all other arguments (return true if no other arguments)
-
 /*
 Params:
   - unknown amount of numbers
@@ -18,11 +16,11 @@ Plan:
 */
 
 function isDivisible(...numbers){
-    let answer
-    
-    for (let i = 0; i <= numbers.length - 1; i++) {
-      numbers[0] % numbers[i] === 0 ? answer = true : answer = false
-    }
-     
-    return answer
-   }
+  let answer = true
+  
+  for (let i = 0; i <= numbers.length - 1; i++) {
+    if (numbers[0] % numbers[i] !== 0) {answer = false}
+  }
+   
+  return answer
+ }
